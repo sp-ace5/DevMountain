@@ -1,0 +1,50 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.container {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.div1 {
+    background-color: lightgrey;
+}
+
+.div2 {
+    background-color:lightblue;
+    margin: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+.div3 {
+    margin: 50px;
+}
+
+.div4 {
+    background-color: blue;
+    height: 300px;
+}
+
+.div5 {
+    background-color: aqua;
+    height: 300px;
+}
+
+.div6 {
+    background-color: lightgreen;
+    height: 300px;
+}
+
+.div7 {
+    background-color: yellow;
+    height: 300px;
+}
