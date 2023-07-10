@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+    background-color: black;
+}
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.spacexLogo {
+    width:200px;
+    height: 100px;
+    top:0%;
+    position: fixed;
+    display:block;
+    padding-left: 50px;
+}
+
+.navbar {
+    list-style-type: none;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.topnav {
+    width:100%;
+    background-color: white;
+    height: 100px;
+}
+
+.middlenav {
+
+    }
+
+.bottomnav {
+    background-color: white;
+    bottom: 0%;
+    position: fixed;
+    width:100%;
+    height: 100px;
+}
+
