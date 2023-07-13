@@ -1,0 +1,32 @@
+For my own simple cipher, I am remapping each letter to a unique symbol. The only way a message could be decoded is with either the key below or by brute forcing the letters.
+
+Full text = 'I love cryptography'
+Encrypted = '+ ](;% !}_)\(%}#)*_'
+
+A = #
+B = @
+C = !
+D = $
+E = %
+F = ^
+G = &
+H = *
+I = +
+J = ?
+K = [
+L = ]
+M = <
+N = >
+O = (
+P = )
+Q = {
+R = }
+S = /
+T = \
+U = |
+V = ;
+W = :
+X = -
+Y = _
+Z = ~
+
