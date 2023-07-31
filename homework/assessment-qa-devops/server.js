@@ -14,18 +14,15 @@ app.use(express.json());
 
 app.use(express.static('public'));
 
-// Create a Rollbar instance and configure it
 const rollbar = new Rollbar({
   accessToken: 'YOUR_ROLLBAR_ACCESS_TOKEN',
   captureUncaught: true,
   captureUnhandledRejections: true,
 });
 
-// Add up the total health of all the robots
 const calculateTotalHealth = (robots) =>
   robots.reduce((total, { health }) => total + health, 0);
 
-// Add up the total damage of all the attacks of all the robots
 const calculateTotalAttack = (robots) =>
   robots
     .map(({ attacks }) =>
@@ -33,7 +30,7 @@ const calculateTotalAttack = (robots) =>
     )
     .reduce((total, damage) => total + damage, 0);
 
-// Calculate both players' health points after the attacks
+
 const calculateHealthAfterAttack = ({ playerDuo, compDuo }) => {
   const compAttack = calculateTotalAttack(compDuo);
   const playerHealth = calculateTotalHealth(playerDuo);
@@ -74,7 +71,6 @@ app.post("/api/duel", (req, res) => {
       playerDuo,
     });
 
-    // comparing the total health to determine a winner
     if (compHealth > playerHealth) {
       playerRecord.losses += 1;
       res.status(200).send("You lost!");
